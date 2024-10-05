@@ -1,0 +1,445 @@
+:root {
+  --orange: #ffa630;
+  --beige: #fbfff5;
+  /* --beige: #edf5e0; */
+  --green: #52d4ca;
+  --blue: #2e5077;
+  --black: #100408;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--black);
+}
+
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 7em;
+  background-color: var(--beige);
+  padding: 0 4.5%;
+}
+
+#logo-container {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  width: 45%;
+  color: var(--blue);
+  font-size: 45px;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+#right-nav-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: right;
+  width: 45%;
+}
+
+#icon-container,
+#dropdown-container {
+  /* border: 1px solid red; */
+  width: 40%;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+#dropdown-container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 1em;
+}
+
+#inner-dropdown-container {
+  /* border: 1px solid blue; */
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+#cornell-logo {
+  width: 2em;
+  height: 2em;
+}
+
+#icon-container {
+  /* border: 1px solid purple; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#inner-icon-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  cursor: pointer;
+}
+
+#profile-dropdown-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+
+#dropdown-arrow {
+  font-size: 0.7em;
+}
+
+#pfp {
+  clip-path: circle();
+  width: 1em;
+  height: 1em;
+  object-fit: cover;
+  object-position: center;
+}
+/* END OF NAVBAR */
+
+#main-container {
+  background-color: var(--beige);
+  height: 150vh;
+}
+
+/* START OF PAGE BUTTONS */
+#page-buttons-container {
+  /* border: 1px solid green; */
+  width: 20em;
+  display: flex;
+  margin-left: 3.5em;
+}
+
+.page-button {
+  /* border: 1px solid red; */
+  margin: 0 1em;
+}
+
+.page-button a {
+  text-decoration: none;
+}
+
+#current-page {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.page-button a div {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page-button a div:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+/* END OF PAGE BUTTONS */
+
+#header-container {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: column;
+  height: 17em;
+  margin-top: 4em;
+}
+
+#profile-container {
+  /* border: 1px solid black; */
+  display: flex;
+  width: 35%;
+}
+
+#profile-pic {
+  clip-path: circle();
+  width: 12em;
+  margin: 0 2em 2em 0;
+}
+
+#username-container {
+  /* border: 1px solid blue; */
+  height: 7em;
+  margin-top: 3em;
+}
+
+#username-container h2 {
+  font-weight: bold;
+}
+
+#username-container h4 {
+  opacity: 70%;
+  font-style: italic;
+}
+
+#rating-container {
+  /* border: 1px solid green; */
+  margin-top: -2em;
+  margin-left: -0.5em;
+}
+
+#rating {
+  height: 3em;
+}
+
+#rating-num-container {
+  /* border: 1px solid orange; */
+  height: 2em;
+  margin-top: 9.25em;
+}
+
+#right-header-container {
+  /* border: 1px solid black; */
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#tags-container {
+  /* border: 1px solid red; */
+  height: 4.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-direction: column;
+  margin-top: -2em;
+}
+
+.tag {
+  border-radius: 7px;
+  height: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--beige);
+}
+
+#photography-tag {
+  background-color: var(--green);
+  width: 8.5em;
+}
+
+#beauty-tag {
+  background-color: #9ec63d;
+  width: 6em;
+}
+
+.tag .fa-solid {
+  color: var(--beige);
+}
+
+#profile-buttons-container {
+  /* border: 1px solid red; */
+  height: 5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#profile-buttons-container .btn {
+  /* border-color: var(--black); */
+  border-radius: 7px;
+  height: 2.5em;
+  width: 8em;
+  border-color: var(--black);
+}
+
+.profile-button {
+  font-style: italic;
+  font-size: 16px;
+  color: var(--black);
+}
+
+#profile-buttons-container .btn:hover {
+  background-color: var(--orange);
+  transition: 0.4s;
+}
+
+#body {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  height: 27em;
+}
+
+#bio-container {
+  /* border: 1px solid purple; */
+  width: 40%;
+  align-items: right;
+  margin-right: 5em;
+}
+
+#bio-container h2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#calendar-container {
+  /* border: 1px solid red; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: start;
+  margin-left: 5em;
+}
+
+#calendar-container h2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#calendar {
+  width: 100%;
+  height: 100%;
+}
+
+#posts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#post-text-container {
+  width: 80%;
+  margin: 2em 0;
+}
+
+#posts-text {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align items to the start */
+  width: 80%;
+}
+
+.post {
+  width: 30%; /* Adjust this for more or fewer columns */
+  margin: 1em; /* Left and right margin to space items */
+}
+
+.post img {
+  width: 100%; /* Makes images responsive */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Prevents extra space below images */
+}
+
+/* Optional: Add a hover effect */
+.post:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+/* FOOTER CONTAINER */
+#footer-container {
+  height: 25%;
+  margin-top: 4em;
+  background-color: var(--beige);
+ }
+ 
+ 
+ #outer-top-footer-container {
+  height: 36rem;
+  background-color: #ced8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ 
+ #top-footer-container {
+  /* border: 1px solid blue; */
+  height: 85%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ 
+ .footer-col {
+  /* border: 1px solid red; */
+  height: 80%;
+  width: 22%;
+ }
+ 
+ 
+ .footer-col-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+ }
+ 
+ 
+ .footer-body-item {
+  margin-top: 1em;
+  cursor: pointer;
+ }
+ 
+ 
+ #bottom-footer-container {
+  height: 15%;
+  background-color: #aebdc5;
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ 
+ #inner-footer-container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: cetner;
+ }
+ 
+ 
+ #left-footer-container,
+ #right-footer-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  width: 50%;
+ }
+ 
+ 
+ #left-footer-container {
+  justify-content: start;
+ }
+ 
+ 
+ #right-footer-container {
+  justify-content: end;
+ }
+ 
+ 
+ #left-footer-container span,
+ #right-footer-container span {
+  margin: 0 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+ }
+ /* END OF FOOTER CONTAINER */
+  
