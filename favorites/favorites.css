@@ -1,0 +1,357 @@
+:root {
+  --orange: #ffa630;
+  --beige: #fbfff5;
+  --green: #52d4ca;
+  --blue: #2e5077;
+  --black: #100408;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--black);
+}
+
+#main-container {
+  background-color: var(--beige);
+  height: 200vh;
+}
+
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 7em;
+  background-color: var(--beige);
+  padding: 0 4.5%;
+}
+
+#logo-container {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  width: 45%;
+  color: var(--blue);
+  font-size: 45px;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+#right-nav-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: right;
+  width: 45%;
+}
+
+#icon-container,
+#dropdown-container {
+  /* border: 1px solid red; */
+  width: 40%;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+#dropdown-container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 1em;
+}
+
+#inner-dropdown-container {
+  /* border: 1px solid blue; */
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+#cornell-logo {
+  width: 2em;
+  height: 2em;
+}
+
+#icon-container {
+  /* border: 1px solid purple; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#inner-icon-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  cursor: pointer;
+}
+
+#profile-dropdown-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+
+#dropdown-arrow {
+  font-size: 0.7em;
+}
+
+#pfp {
+  clip-path: circle();
+  width: 1em;
+  height: 1em;
+  object-fit: cover;
+  object-position: center;
+}
+/* END OF NAVBAR */
+
+/* START OF PAGE BUTTONS */
+#page-buttons-container {
+  /* border: 1px solid green; */
+  width: 20em;
+  display: flex;
+  margin-left: 3.5em;
+}
+
+.page-button {
+  /* border: 1px solid red; */
+  margin: 0 1em;
+}
+
+.page-button a {
+  text-decoration: none;
+}
+
+#current-page {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.page-button a div {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page-button a div:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+/* END OF PAGE BUTTONS */
+
+/* FAVORITES */
+#header {
+  font-weight: bold;
+  margin: 2rem;
+  font-size: 32px;
+}
+
+#num-favorites {
+  width: 75%;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#favorites-gallery-container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#favorites-gallery {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around; /* Align items to the start */
+  width: 80%;
+}
+/* END OF FAVORITES */
+
+/* SELLER CARD */
+
+.seller-card {
+  width: 28%; /* Adjust this for more or fewer columns */
+  margin: 1em; /* Left and right margin to space items */
+}
+
+.card-image {
+  border-radius: 5px;
+}
+
+.seller-image {
+  border-radius: 10px;
+  width: 100%; /* Makes images responsive */
+}
+
+.seller-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.seller-name {
+  font-size: large;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.seller-stats-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.rating-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 3em;
+  font-size: 14px;
+}
+
+.pricing {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bookings {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 14px;
+}
+
+.delimiter-container {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.4em;
+}
+
+.tags-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  /* border: 1px solid blue; */
+  width: 30%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 2em;
+}
+
+.green-tag {
+  background-color: rgb(158 198 61 / 0.5);
+}
+
+.blue-tag {
+  background-color: rgb(77 168 161 / 0.5);
+}
+
+.purple-tag {
+  background-color: rgb(144 77 168 / 0.5);
+}
+/* END OF SELLER CARD */
+
+/* FOOTER CONTAINER */
+#footer-container {
+  height: 36rem;
+  background-color: var(--beige);
+}
+
+#outer-top-footer-container {
+  height: 85%;
+  background-color: #ced8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-footer-container {
+  /* border: 1px solid blue; */
+  height: 25rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-col {
+  /* border: 1px solid red; */
+  height: 80%;
+  width: 22%;
+}
+
+.footer-col-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footer-body-item {
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+#bottom-footer-container {
+  height: 15%;
+  background-color: #aebdc5;
+  display: flex;
+  justify-content: space-between;
+}
+
+#inner-footer-container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: cetner;
+}
+
+#left-footer-container,
+#right-footer-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#left-footer-container {
+  justify-content: start;
+}
+
+#right-footer-container {
+  justify-content: end;
+}
+
+#left-footer-container span,
+#right-footer-container span {
+  margin: 0 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+/* END OF FOOTER CONTAINER */
