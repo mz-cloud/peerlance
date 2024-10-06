@@ -1,0 +1,358 @@
+:root {
+  --orange: #ffa630;
+  --beige: #fbfff5;
+  --green: #52d4ca;
+  --blue: #2e5077;
+  --black: #100408;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--black);
+}
+
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 7em;
+  background-color: var(--beige);
+  padding: 0 4.5%;
+}
+
+#logo-container {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  width: 45%;
+  color: var(--blue);
+  font-size: 45px;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+#right-nav-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: right;
+  width: 45%;
+}
+
+#icon-container,
+#dropdown-container {
+  /* border: 1px solid red; */
+  width: 40%;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+#dropdown-container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 1em;
+}
+
+#inner-dropdown-container {
+  /* border: 1px solid blue; */
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+#cornell-logo {
+  width: 2em;
+  height: 2em;
+}
+
+#icon-container {
+  /* border: 1px solid purple; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#inner-icon-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  cursor: pointer;
+}
+
+#profile-dropdown-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+
+#dropdown-arrow {
+  font-size: 0.7em;
+}
+
+#pfp {
+  clip-path: circle();
+  width: 1em;
+  height: 1em;
+  object-fit: cover;
+  object-position: center;
+}
+/* END OF NAVBAR */
+
+/* START OF PAGE BUTTONS */
+#page-buttons-container {
+  /* border: 1px solid green; */
+  width: 20em;
+  display: flex;
+  margin-left: 3.5em;
+}
+
+.page-button {
+  /* border: 1px solid red; */
+  margin: 0 1em;
+}
+
+.page-button a {
+  text-decoration: none;
+}
+
+#current-page {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.page-button a div {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page-button a div:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+/* END OF PAGE BUTTONS */
+
+/* FOOTER CONTAINER */
+#footer-container {
+  height: 36rem;
+  background-color: var(--beige);
+}
+
+#outer-top-footer-container {
+  height: 85%;
+  background-color: #ced8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-footer-container {
+  /* border: 1px solid blue; */
+  height: 25rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-col {
+  /* border: 1px solid red; */
+  height: 80%;
+  width: 22%;
+}
+
+.footer-col-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footer-body-item {
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+#bottom-footer-container {
+  height: 15%;
+  background-color: #aebdc5;
+  display: flex;
+  justify-content: space-between;
+}
+
+#inner-footer-container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: cetner;
+}
+
+#left-footer-container,
+#right-footer-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#left-footer-container {
+  justify-content: start;
+}
+
+#right-footer-container {
+  justify-content: end;
+}
+
+#left-footer-container span,
+#right-footer-container span {
+  margin: 0 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+/* END OF FOOTER CONTAINER */
+
+#main-container {
+  background-color: var(--beige);
+}
+
+#body-container {
+  min-height: calc(100vh - 36rem);
+  padding-bottom: 2rem;
+}
+
+/* SEARCH CONTAINER */
+#search-container {
+  margin-top: 3em;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#inner-search-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#inner-search-container img {
+  width: 100%;
+}
+/* END OF SEARCH CONTAINER */
+
+/* CATEGORIES CONTAINER */
+#categories-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 80%;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5rem;
+}
+
+#inner-categories-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#inner-categories-container img {
+  width: 100%;
+}
+/* END OF CATEGORIES CONTAINER */
+
+/* NEAR CONTAINER */
+#near-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner-near-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#inner-near-container img {
+  width: 100%;
+}
+/* END OF NEAR CONTAINER */
+
+/* FEATURED SELLERS CONTAINER */
+#featured-container {
+  /* Existing styles */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+  margin-bottom: 1rem;
+}
+
+#card-container {
+  /* border: 1px solid blue; */
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-seller-card {
+  width: 20%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: right;
+  padding: 0.5em 0.5em 0 0;
+}
+
+.featured-seller-card i {
+  font-size: 1.3em;
+  height: 11%;
+  cursor: pointer;
+}
+
+#cornellcuts {
+  background-image: url(./cornellcuts.png);
+}
+
+#annascookies {
+  background-image: url(./annascookies.png);
+}
+
+#fourstrings {
+  background-image: url(./4strings.png);
+}
+
+#fixitcrew {
+  background-image: url(./fixitcrew.png);
+}
+/* END OF FEATURED SELLERS CONTAINER */
