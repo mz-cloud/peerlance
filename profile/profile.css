@@ -35,6 +35,7 @@
 
 #logo {
   font-weight: bold;
+  color: var(--blue);
 }
 
 #right-nav-container {
@@ -358,88 +359,76 @@
   height: 25%;
   margin-top: 4em;
   background-color: var(--beige);
- }
- 
- 
- #outer-top-footer-container {
+}
+
+#outer-top-footer-container {
   height: 36rem;
   background-color: #ced8d8;
   display: flex;
   justify-content: center;
   align-items: center;
- }
- 
- 
- #top-footer-container {
+}
+
+#top-footer-container {
   /* border: 1px solid blue; */
   height: 85%;
   width: 90%;
   display: flex;
   justify-content: space-around;
- }
- 
- 
- .footer-col {
+}
+
+.footer-col {
   /* border: 1px solid red; */
   height: 80%;
   width: 22%;
- }
- 
- 
- .footer-col-header {
+}
+
+.footer-col-header {
   font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
- }
- 
- 
- .footer-body-item {
+}
+
+.footer-body-item {
   margin-top: 1em;
   cursor: pointer;
- }
- 
- 
- #bottom-footer-container {
+}
+
+#bottom-footer-container {
   height: 15%;
   background-color: #aebdc5;
   display: flex;
   justify-content: space-between;
- }
- 
- 
- #inner-footer-container {
+}
+
+#inner-footer-container {
   /* border: 1px solid blue; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: cetner;
- }
- 
- 
- #left-footer-container,
- #right-footer-container {
+}
+
+#left-footer-container,
+#right-footer-container {
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
   width: 50%;
- }
- 
- 
- #left-footer-container {
+}
+
+#left-footer-container {
   justify-content: start;
- }
- 
- 
- #right-footer-container {
+}
+
+#right-footer-container {
   justify-content: end;
- }
- 
- 
- #left-footer-container span,
- #right-footer-container span {
+}
+
+#left-footer-container span,
+#right-footer-container span {
   margin: 0 2em;
   font-size: 1.2em;
   cursor: pointer;
- }
- /* END OF FOOTER CONTAINER */
-  
+}
+/* END OF FOOTER CONTAINER */
